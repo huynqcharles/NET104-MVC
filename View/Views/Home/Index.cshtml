@@ -1,0 +1,74 @@
+﻿@model View.Models.ViewModels.StudentDetailsViewModel
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+@{
+    // var students = ViewData["listStudents"] as List<Student>;
+    // var students = ViewBag.ListStudent;
+}
+
+@* <div class="text-center"> *@
+@*     <h1 class="display-4">Welcome</h1> *@
+@*     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p> *@
+@* </div> *@
+@* *@
+@* <table class="table"> *@
+@*   <thead> *@
+@*     <tr> *@
+@*       <th scope="col">StudentId</th> *@
+@*       <th scope="col">Name</th> *@
+@*       <th scope="col">Branch</th> *@
+@*       <th scope="col">Section</th> *@
+@*       <th scope="col">Gender</th> *@
+@*     </tr> *@
+@*   </thead> *@
+@*   <tbody> *@
+@*   @foreach (var std in Model) *@
+@*   { *@
+@*       <tr> *@
+@*           <th scope="row">@std.StudentId</th> *@
+@*           <td>@std.Name</td> *@
+@*           <td>@std.Branch</td> *@
+@*           <td>@std.Section</td> *@
+@*           <td>@std.Gender</td> *@
+@*       </tr> *@
+@*   } *@
+@*    *@
+@* *@
+@*   </tbody> *@
+@* </table> *@
+
+
+    @* <div> *@
+    @*     StudentId : @Model?.Student?.StudentId *@
+    @* </div> *@
+    @* <div> *@
+    @*     Name : @Model?.Student?.Name *@
+    @* </div> *@
+    @* <div> *@
+    @*     Branch : @Model?.Student?.Branch *@
+    @* </div> *@
+    @* <div> *@
+    @*     Section : @Model?.Student?.Section *@
+    @* </div> *@
+    @* <div> *@
+    @*     Gender : @Model?.Student?.Gender *@
+    @* </div> *@
+    @* <div> *@
+    @*     Status : @Model?.Status *@
+    @* </div> *@
+
+<h1>@TempData["Name"]</h1>
+
+<div id="myPartialView">
+    
+</div>
+
+@section Scripts
+{
+    <script>
+        $('#myPartialView').load("/Home/MyPartialView/")
+    </script>
+}
