@@ -1,0 +1,71 @@
+@model Movie
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>title</title>
+</head>
+<body>
+<div>
+    @* Normal HTML *@
+    @* <form> *@
+    @*     <div class="form-group"> *@
+    @*         <label>Name</label> *@
+    @*         <input type="text" class="form-control"> *@
+    @*     </div> *@
+    @*     <div class="form-group"> *@
+    @*         <label>Description</label> *@
+    @*         <textarea class="form-control"></textarea> *@
+    @*     </div> *@
+    @*     <div class="form-group"> *@
+    @*         <label>Rating</label> *@
+    @*         <input type="text" class="form-control"> *@
+    @*     </div> *@
+    @*      *@
+    @*     <button type="submit" class="btn btn-primary">Submit</button> *@
+    @* </form> *@
+    
+    @* HTML Helpers *@
+    @* <form> *@
+    @*     <div class="form-group"> *@
+    @*         @Html.Label("Name") *@
+    @*         @Html.EditorFor(Model => Model.Name) *@
+    @*     </div> *@
+    @*     <div class="form-group"> *@
+    @*         @Html.Label("Description") *@
+    @*         @Html.TextArea("Description", null, new { @class = "form-control" }) *@
+    @*     </div> *@
+    @*     <div class="form-group"> *@
+    @*         @Html.Label("Rating") *@
+    @*         @Html.EditorFor(Model => Model.Rating) *@
+    @*     </div> *@
+    @*          *@
+    @*     <button type="submit" class="btn btn-primary">Submit</button> *@
+    @* </form> *@
+    
+    @* Tag Helpers *@
+    <form asp-controller="Home" asp-action="AddMovie" method="post">
+        <div class="form-group">
+            <label asp-for="Name"></label>
+            <input asp-for="Name" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="Description"></label>
+            <textarea asp-for="Description" class="form-control"></textarea>
+        </div>
+        <div class="form-group">
+            <label asp-for="Rating"></label>
+            <input asp-for="Rating" class="form-control" />
+        </div>
+                
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    
+</div>
+</body>
+</html>

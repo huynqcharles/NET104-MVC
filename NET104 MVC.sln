@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Routing", "Routing\Routing.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "View", "View\View.csproj", "{61440BDA-1AC7-4A62-9C3C-1DA1BB4B2375}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HTML Helpers", "HTML Helpers\HTML Helpers.csproj", "{0709A72A-4448-442F-B089-F66FADA5F996}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{61440BDA-1AC7-4A62-9C3C-1DA1BB4B2375}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{61440BDA-1AC7-4A62-9C3C-1DA1BB4B2375}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{61440BDA-1AC7-4A62-9C3C-1DA1BB4B2375}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0709A72A-4448-442F-B089-F66FADA5F996}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0709A72A-4448-442F-B089-F66FADA5F996}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0709A72A-4448-442F-B089-F66FADA5F996}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0709A72A-4448-442F-B089-F66FADA5F996}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

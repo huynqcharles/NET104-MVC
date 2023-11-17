@@ -1,0 +1,34 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model Employee
+<table>
+    <tr>
+        <td>EmployeeId</td>
+        <td>@Html.EditorFor(@Model => Model.EmployeeId)</td>
+        <td><input asp-for="EmployeeId"/></td>
+        
+    </tr>
+    <tr>
+        <td>Name</td>
+        <td>@Html.Editor("Name")</td>
+    </tr>
+    <tr>
+        <td>Gender</td>
+        <td>@Html.Editor("Gender")</td>
+    </tr>
+    <tr>
+        <td>Age</td>
+        <td>@Html.Editor("Age")</td>
+    </tr>
+    <tr>
+        <td>IsNewlyEnrolled</td>
+        <td>@Html.Editor("IsNewlyEnrolled")</td>
+    </tr>
+    <tr>
+        <td>DOB</td>
+        <td>@Html.Editor("DOB")</td>
+    </tr>
+</table>
+
