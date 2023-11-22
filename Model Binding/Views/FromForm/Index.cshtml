@@ -1,0 +1,18 @@
+@model User
+
+<div asp-validation-summary="All"></div>
+<form method="post" asp-controller="FromForm" asp-action="Index">
+    <label asp-for="UserName">Name:</label>
+    <input asp-for="UserName" type="text" name="UserName" />
+    <span asp-validation-for="UserName"></span>
+    <br />
+    <label asp-for="UserEmail">Email:</label>
+    <input asp-for="UserEmail" type="text" name="UserEmail" />
+    <span asp-validation-for="UserEmail"></span>
+    <br />
+    <label>Price:</label>
+    <input type="text" name="Price" />
+    <br />
+    
+    <button type="submit">Submit</button>
+</form>
