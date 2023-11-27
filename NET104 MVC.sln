@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HTML Helpers", "HTML Helper
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model Binding", "Model Binding\Model Binding.csproj", "{295DCDAF-0099-4D0C-99CA-FA6680038651}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluentAPI", "FluentAPI\FluentAPI.csproj", "{8E6641B6-9B7E-46B1-B8C5-FA06212AD177}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{295DCDAF-0099-4D0C-99CA-FA6680038651}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{295DCDAF-0099-4D0C-99CA-FA6680038651}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{295DCDAF-0099-4D0C-99CA-FA6680038651}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E6641B6-9B7E-46B1-B8C5-FA06212AD177}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E6641B6-9B7E-46B1-B8C5-FA06212AD177}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E6641B6-9B7E-46B1-B8C5-FA06212AD177}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E6641B6-9B7E-46B1-B8C5-FA06212AD177}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
